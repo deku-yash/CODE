@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient( rgb(22, 95, 126),rgb(70, 109, 127) ,rgb(61, 57, 57));
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warning{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    position: relative;
+    top: 20px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+i{
+    position: absolute;
+    color: white;
+    top: 13px;
+    right: 0px;
+}
+
+.formbox{
+    position:relative;
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formbox h2{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+.formbox .inputbox{
+    position: relative;
+    width: 310px;
+    margin: 30px  0;
+    border-bottom: 2px solid white;
+}
+
+.formbox .inputbox input{
+    
+   width: 100%;
+   height: 40px;
+   padding: 0 20px 0 5px;
+   border: none;
+   color: white;
+   cursor: pointer;
+   background: transparent;
+   font-size: 16px;
+    
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: #4cafaf;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+}
+
+a{
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+    color: white;
+    text-decoration:dotted ;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.popup{
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale();
+    transition: transform .3s , bottom .3s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color:black
+}
+
+.popup button{
+    width: 100%;
+    background:#4cafaf;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.open-slide{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.popup i{
+    color: greenyellow;
+    font-size: 70px;
+    position: relative;
+    text-align: center;
+}
+
+.popup h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+.popup p{
+    margin-top: 20px;
+    font-weight: bold;
+}
