@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color:rgb(47, 45, 45);
+}
+body{
+    font-family: 'Poppins';
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+header{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+h4{
+    color: white;
+    font-size: 50px;
+   
+    position:absolute ;
+    right: 5px;
+    top: 5px;
+}
+.home-link {
+    width: 100px; 
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+}
+
+.home-link:hover {
+    color: lightgray;
+}
+
+/* Style for genre buttons */
+.genre {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.genre:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#movie-details {
+    max-width: 90%;
+    margin: auto;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+   
+}
+
+.movie-detail {
+    display: flex;
+    gap: 20px;
+}
+
+.movie-detail img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.movie-info h1 {
+    margin: 0;
+    color: whitesmoke;
+    
+}
+
+.movie-info p {
+    margin: 5px 0;
+    color: aliceblue;
+}
+
+.movie-info strong {
+    color: cyan;
+}
+
+
+#watch-providers ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#watch-providers li {
+    display: inline-block;
+}
+
+#watch-providers img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+#watch-providers img:hover {
+    transform: scale(1.1);
+}
+
+
+#movie-trailer {
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+}
+
+#movie-trailer iframe {
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
